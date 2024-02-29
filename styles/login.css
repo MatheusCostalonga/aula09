@@ -1,0 +1,67 @@
+body{
+    background-color: #68686e;
+    margin: 0;
+    padding: 0;
+    display: grid;  
+    text-align: center;
+    font: 20px;
+}
+main{
+    display: grid;
+    justify-content: center;
+    align-content: center   ;
+}
+main #login{    
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+
+}
+#telaFundo{
+    display: grid;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 25px;
+    color:#f0f8ff;
+    max-width: 50vw;
+}
+#usuario, #senha{
+    width: 300px   ;
+    height: 50px;
+    text-align: left;
+    justify-content: center ;
+    align-content: center;
+    color: rgb(0, 0, 0);
+
+}
+#usuario{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #000000;
+}
+#senha{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #000000;
+    
+}
+main .usuario{
+    font-size: x-large;
+ color: rgb(0, 0, 0);
+}
+main .senha{
+    font-size:x-large ;
+color: rgb(0, 0, 0);
+}
+.button{
+width: 300px;
+height: 50px;
+border-radius: 25px;
+color: black;
+border-color: black;
+cursor: pointer;
+background-color: gray;
+}
