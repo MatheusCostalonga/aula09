@@ -1,9 +1,8 @@
 header{
 width: 100%;
-height: 105px;
 background-color: #FEFF99;
 display: grid;
-grid-template-columns: 200px 500px;
+grid-template-columns: 200px 300px;
 }
 #separar{
 display: grid;
@@ -13,68 +12,96 @@ margin: 0px;
 }
 header img{
 justify-content: center;
-
-width: 200px;   
+width: 100%;   
 }
 
-#pesquisa{  
+#search-input{  
 position: absolute;
 top: 4%;
-left: 35%;
-width: 700px;
-height: 40px;
+left: 32%;
+width: 47%;
+height: 4%;
 border-radius: 50px;
 }
 
-main div img{
-    width: 250px;
+.search-button{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 4.4%;
+    left: 80%;
+    background-color: #FEFF99;
+    color: black;
+    cursor: pointer;
+}
+.search-button:hover{
+    box-shadow: 2px 3px 2px rgb(73, 73, 73);
+}
 
+.error{
+    position: absolute;
+    left: 49%;
+    top: 9%;
+    font-size: medium;
+    font-family: Arial;
+}
+
+main div img{
+ width: 40%;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main div p{
-    text-align: center;
-}
 #pikachu{
 position: absolute;
-top: 500px;
-left: 350px;
+top: 73%;
+left: 23%;
 border: 1px solid black;
-padding: 20px;
+padding: 1%;
 display: flex;
+max-width: 55%;
 }
 #greninja{
     position: absolute;
-    top: 1000px;
-    left: 350px;
+    top: 150%;
+    left: 23%;
     border: 1px solid black;
-    padding: 20px;
+    padding: 1%;
     display: flex;
-    overflow: hidden;
-
+    max-width: 55%; 
 }
 #pikachu p, #greninja p{
     margin-left: 5px;
     color:  black;
     font-size:medium;
     text-align: left;
-    width: 900px;
+    width: 60%;
     font-family: Arial;
 }
 
 main .h h2{
     position: absolute;
-    top: 45%;
-    left: 29%;
+    top: 65%;
+    left: 26%;
 }
 main .h2 h2{
     position: absolute;
-    top: 100%;
-    left: 27%;
+    top: 140%;
+    left: 26%;
 }
+
+main .titulo{
+    position: absolute;
+    font-weight: 600;
+    font-size: 500%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 40%;
+    left: 45%;
+}
+
+/* -------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
     header{
         width: 230%;
@@ -83,23 +110,66 @@ main .h2 h2{
         display: grid;
         grid-template-columns: 200px 500px;
     }
-    #pikachu div{
-      position: absolute;
-      top: 100px;
-    }
-    #greninja div{
+    #search-input{
         position: absolute;
-        top: 1000px;  
+        top: 10%;
+        left: 80%;
+        width: 500px;
+        height: 30px;
+      }
+      .search-button{
+        position: absolute;
+        top: 10%;
+        left: 1200px;
+        width: 50px;
+        height: 50px;
+      }
+    main .titulo{
+        position: absolute;
+        font-weight: 600;
+        font-size: 500%;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        top: 20%;
+        left: 85%;
     }
-    #pikachu img{
-      width: 40%; 
+    main .h{
+        position: absolute;
+        top: 70%;
+        max-width: 200px;
+    }
 
+    #pikachu{
+      position: absolute;
+      width: 150%;
+      top: 90%;
+      max-width: 150%;
+     
     }
-    #tudo img{
-      width: 20%; 
-      height: auto;
+    main .h2{
+        position: absolute;
+        top: 220%;
+        margin: 0;
+    }  
+
+    #greninja{
+        display: flex;
+        margin-left: -160px;
+        padding: 5px;
+        width: 900px;
+        max-width: 2000px;
+        height: 500px;
+        max-height: 750px;
+        position: absolute;
+        top: 190px;
+        left: 0px;
+        }
+        
+        #pikachu p, #greninja p{
+            margin-left: 5px;
+            color:  black;
+            font-size:medium;
+            text-align: left;
+            width: 60%;
+            font-family: Arial;
+        }
     }
-    input{
-      left: 30%;
-    }
-}   

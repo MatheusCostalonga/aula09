@@ -12,13 +12,19 @@
         <div id="separar">
    <img src="./../assets/pokemon.jpg" alt="">   
 </div>
-   <input type="text" id="pesquisa" placeholder="Pesquisar">  
+
+<form action="" class="search">
+    <input type="search" id="search-input" placeholder="pesquisar nome do pokemon">
+    <button class="search-button">Procurar</button>
+  </form>
+
+  <span class="error">Pokemon não encontrado</span> 
 
     </header>
     <main>
-<main>
-
-    <h2>POKEMON</h2>
+       <h2 class="titulo">POKEMON</h2>
+       <section class="pokemon">
+    </section>
     <div class="h">
         <h2>O que é pokemon?</h2>
     </div>  
@@ -36,6 +42,6 @@
 </div>
 </div>
 </main>
-    </main>
+<script src="./../js/pokeapi.js"></script>
 </body>
 </html>
